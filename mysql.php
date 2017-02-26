@@ -48,12 +48,12 @@ function mysql_select_db($database_name) {
 
 function mysql_errno($link=NULL) {
   if ($link===NULL) $link=$GLOBALS['mysql_oldstyle_link'];
-  return mysqli_errno($res);
+  return mysqli_errno($link);
 }
 
 function mysql_error($link=NULL) {
   if ($link===NULL) $link=$GLOBALS['mysql_oldstyle_link'];
-  return mysqli_error($res);
+  return mysqli_error($link);
 }
 
 function mysql_num_rows($res) {
