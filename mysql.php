@@ -67,3 +67,7 @@ function mysql_free_result($res) {
 function mysql_close($link) {
   return mysqli_close($link);
 }
+
+function mysql_real_escape_string($str) {
+  return mysqli_real_escape_string($str);
+}
